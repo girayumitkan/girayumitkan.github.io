@@ -1,24 +1,24 @@
-vCard - Personal Portfolio
+Giray Ümitkan - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Giray ümitkan
+Giray Ümitkan  
+Game developer
 
 Show Contacts
 
 Email
-richard@example.com
+girayumitkan@gmail.com
 
 Phone
-+1 (213) 352-2795
++90 (505) 742-4873
 
 Birthday
-June 23, 1982
+September 03, 2001
 
 Location
-Sacramento, California, USA
+Bursa, TURKEY
 
 # navbar
 
@@ -32,9 +32,7 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+Hello! As someone devoted to exploring the magical and boundless potential of the gaming world, I am delighted to invite you to embark on the game development adventures I've undertaken. By taking the first step, I welcome you to my portfolio, where creativity and technology converge in a magnificent junction!
 
 
 ## service
@@ -42,8 +40,8 @@ My job is to build your website so that it is functional and user-friendly but a
 What i'm doing
 
 alt = design icon
-Web design
-The most modern and high-quality design made at a professional level.
+Unity game development
+High-quality  development of 2d and 3d games at beginner level.
 
 alt = Web development icon
 Web development
