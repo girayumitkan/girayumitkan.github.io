@@ -134,7 +134,28 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+function openPopup(e) {
+  e.preventDefault();
+  const popup = document.getElementById("gamePopup");
+  if (popup) {
+    popup.classList.add("active"); // display:block yerine CSS'te .active ile kontrol daha temiz
+  }
+}
 
+function closePopup() {
+  const popup = document.getElementById("gamePopup");
+  if (popup) {
+    popup.classList.remove("active");
+  }
+}
+
+// Dışarı tıklayınca kapatma
+window.addEventListener("click", function (event) {
+  const popup = document.getElementById("gamePopup");
+  if (popup && event.target === popup) {
+    closePopup();
+  }
+});
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
