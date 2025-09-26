@@ -1,188 +1,153 @@
-<!DOCTYPE html>
+<!--
+FILE: index.html
+Description: Updated single-file index with language toggle (English default, Turkish option).
+Place assets in /assets/ and project pages in /projects/.
+-->
+
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giray - Personal Portfolio</title>
-
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/icon-dev.svg" type="image/x-icon">
-
-  <!-- custom css -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Giray Ümitkan — Portfolio</title>
+  <meta name="description" content="Giray Ümitkan — Game Developer. Featured projects and short intro." />
+  <link rel="icon" href="assets/favicon.png" />
+  <style>
+:root{ --bg:#0b0b0b; --panel:#111; --muted:#9e9e9e; --accent:#e6b75b; --white:#fff; --ff: 'Poppins', sans-serif; }
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%} body{font-family:var(--ff);background:var(--bg);color:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.container{max-width:1200px;margin:28px auto;padding:20px;display:grid;grid-template-columns:320px 1fr;gap:28px}
+.sidebar{background:var(--panel);border-radius:14px;padding:22px}
+.avatar{width:100%;max-width:200px;border-radius:12px;display:block;margin:0 auto 16px}
+.name{font-size:22px;font-weight:700;text-align:center;margin-bottom:6px}
+.title{display:block;text-align:center;color:var(--muted);font-size:13px;padding:6px 12px;border-radius:10px;background:#0b0b0b;margin:0 auto}
+.contact-list{margin-top:18px;display:grid;gap:10px}
+.contact-item{font-size:14px;color:var(--muted)}
+.main{background:linear-gradient(180deg,#0f0f0f,#0b0b0b);border-radius:14px;padding:28px;min-height:420px}
+.hero{margin-bottom:18px}
+.hero h1{font-size:28px;margin-bottom:8px}
+.hero p{color:var(--muted);line-height:1.6}
+.actions{margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;background:var(--accent);color:#111;border-radius:999px;font-weight:700}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;margin-top:20px}
+.project-card{background:#0d0d0d;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.project-card img{width:100%;height:140px;object-fit:cover;border-radius:10px}
+.project-title{font-weight:600}
+.project-links{margin-top:auto;display:flex;gap:8px}
+.project-links a{font-size:13px;color:var(--muted)}
+.lang-toggle{display:flex;gap:8px;justify-content:flex-end}
+.lang-toggle button{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:6px 10px;border-radius:8px;cursor:pointer}
+.lang-toggle button.active{border-color:var(--accent);color:var(--white)}
+@media (max-width:880px){.container{grid-template-columns:1fr;padding:16px}.sidebar{order:2}.main{order:1}}
+</style>
 </head>
-
 <body>
-  <main>
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Giray Ümitkan" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="Giray Ümitkan">Giray Ümitkan</h1>
-          <p class="title">Game Developer</p>
-        </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="lang-toggle" style="margin-bottom:12px">
+        <button id="lang-en" data-lang="en" class="active">EN</button>
+        <button id="lang-tr" data-lang="tr">TR</button>
       </div>
 
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:girayumitkan@gmail.com" class="contact-link">girayumitkan@gmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+905057624879" class="contact-link">+90 (505) 762-4879</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="2001-09-03">September 03, 2001</time>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Bursa, Turkey</address>
-            </div>
-          </li>
-        </ul>
+      <img class="avatar" src="assets/avatar.jpg" alt="Giray Ümitkan" />
+      <div class="name" data-lang="en">Giray Ümitkan</div>
+      <div class="name" data-lang="tr" style="display:none">Giray Ümitkan</div>
+      <div class="title" data-lang="en">Game Developer</div>
+      <div class="title" data-lang="tr" style="display:none">Oyun Geliştirici</div>
 
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item"><a href="https://www.linkedin.com/in/giray-umitkan/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          <li class="social-item"><a href="https://github.com/girayumitkan" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
-          <li class="social-item"><a href="https://play.google.com/store/apps/dev?id=5391276629168237411&hl=tr" class="social-link"><ion-icon name="logo-google-playstore"></ion-icon></a></li>
-        </ul>
+      <div class="contact-list">
+        <div class="contact-item">📧 <span data-lang="en">girayumitkan@gmail.com</span><span data-lang="tr" style="display:none">girayumitkan@gmail.com</span></div>
+        <div class="contact-item">📍 <span data-lang="en">Bursa, Turkey</span><span data-lang="tr" style="display:none">Bursa, Türkiye</span></div>
+        <div class="contact-item">📞 <span data-lang="en">+90 (505) 762-4879</span><span data-lang="tr" style="display:none">+90 (505) 762-4879</span></div>
       </div>
     </aside>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
-        </ul>
-      </nav>
-
-      <!-- ABOUT -->
-      <article class="about active" data-page="about">
-        <header><h2 class="h2 article-title">About Me</h2></header>
-        <section class="about-text">
-          <p>Hello! I am passionate about exploring the magical and boundless potential of the gaming world. My goal is to create games where creativity and technology converge.</p>
-          <p>I specialize in Unity and C#, developing both innovative personal projects and mobile games for the industry. I also integrate monetization systems into Unity games.</p>
+    <main class="main">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+        <section class="hero" style="flex:1">
+          <h1 data-lang="en">Hi — I'm Giray</h1>
+          <h1 data-lang="tr" style="display:none">Merhaba — Ben Giray</h1>
+          <p data-lang="en">Short intro: I build games with Unity &amp; C#. I focus on mobile games, idle mechanics, monetization, and polished UX. Click project images to open external links in a new tab; use "Details" to open an in-site project page.</p>
+          <p data-lang="tr" style="display:none">Kısa tanıtım: Unity ve C# ile oyunlar geliştiriyorum. Mobil oyunlar, idle mekanikleri, monetizasyon ve UX üzerine çalışıyorum. Proje resmine tıklayınca dış link yeni sekmede açılır; "Detay" ile sayfa içi proje tanıtımı açılır.</p>
+          <div class="actions">
+            <a class="btn" href="#projects" data-lang="en">Projects</a>
+            <a class="btn" href="#projects" data-lang="tr" style="display:none">Projeler</a>
+            <a class="btn" href="assets/resume.pdf" style="background:#ccc;color:#111">CV</a>
+          </div>
         </section>
-      </article>
+      </div>
 
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-        <header><h2 class="h2 article-title">Resume</h2></header>
+      <section id="projects" style="margin-top:8px">
+        <h2 data-lang="en">Projects</h2>
+        <h2 data-lang="tr" style="display:none">Projeler</h2>
 
-        <section class="timeline">
-          <div class="title-wrapper"><div class="icon-box"><ion-icon name="book-outline"></ion-icon></div><h3 class="h3">Education</h3></div>
-          <ol class="timeline-list">
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Pamukkale University, Computer Engineering</h4><span>2019 — 2023</span></li>
-          </ol>
-        </section>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="assets/projects/project1.jpg" alt="Idle Fishing ASMR" />
+            <div class="project-title" data-lang="en">Idle Fishing ASMR</div>
+            <div class="project-title" data-lang="tr" style="display:none">Idle Fishing ASMR</div>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.example.idlefishing" target="_blank" rel="noopener">Open (store)</a>
+              <a href="projects/idle-fishing.html" target="_blank">Details</a>
+            </div>
+          </article>
 
-        <section class="timeline">
-          <div class="title-wrapper"><div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div><h3 class="h3">Experience</h3></div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">AI Developer / Machine Learning Engineer – Outlier</h4>
-              <span>Dec 2024 – Present (Remote)</span>
-              <p class="timeline-text">Designed ML models, fine-tuned LLMs, and developed AI evaluation tools using Python and PyTorch.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Unity Tutor – Kodland</h4>
-              <span>Sep 2024 – Jun 2025 (Remote)</span>
-              <p class="timeline-text">Taught Unity and C# to students, guiding them to develop complete projects and improve coding skills.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Intern – Prestij Software</h4>
-              <span>Jul 2022 – Sep 2022</span>
-              <p class="timeline-text">Worked on SQL queries for Bursa State Hospital database, focusing on data accuracy and reporting.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Intern – Funika Games</h4>
-              <span>Jan 2022 – Mar 2022</span>
-              <p class="timeline-text">Contributed to hyper-casual mobile games and learned industry workflows.</p>
-            </li>
-          </ol>
-        </section>
+          <article class="project-card">
+            <img src="assets/projects/project2.jpg" alt="Spin Wheel System" />
+            <div class="project-title" data-lang="en">Spin Wheel System</div>
+            <div class="project-title" data-lang="tr" style="display:none">Spin Wheel System</div>
+            <div class="project-links">
+              <a href="https://example.com/spinwheel" target="_blank" rel="noopener">Open (demo)</a>
+              <a href="projects/spin-wheel.html" target="_blank">Details</a>
+            </div>
+          </article>
 
-        <section class="skill">
-          <h3 class="h3 skills-title">Skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Unity / C#</h5><data value="90">90%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:90%;"></div></div></li>
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Python / AI</h5><data value="70">70%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:70%;"></div></div></li>
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">SQL / Databases</h5><data value="60">60%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:60%;"></div></div></li>
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Game Design</h5><data value="80">80%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:80%;"></div></div></li>
-          </ul>
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <h3 class="h3">🌍 Türkçe Çeviri</h3>
-          <p>Bilgisayar Mühendisliği mezunu, oyun geliştirme ve yapay zekâya ilgi duyan, Unity ve C# üzerinde deneyimli. SQL ve Python bilgisine sahip, problem çözme ve yaratıcılıkla öne çıkan bir geliştirici.</p>
-        </section>
-      </article>
+    </main>
+  </div>
 
-      <!-- PROJECTS -->
-      <article class="clients" data-page="projects">
-        <header><h2 class="h2 article-title">Projects</h2></header>
-        <section>
-          <a href="https://play.google.com/store/apps/dev?id=5391276629168237411&hl=tr" target="_blank" class="btn" style="background:#2196f3;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;">Google Play Developer Page</a>
-        </section>
-        <ul class="clients-list has-scrollbar">
-          <li class="clients-item"><a href="https://play.google.com/store/apps/details?id=com.UmitkanProduction.BilBakalim"><img src="./assets/images/image.png" width="400" height="200"><div class="text" style="color:#fff;"><center>Bil Bakalım</center></div></a></li>
-          <li class="clients-item"><a href="https://play.google.com/store/apps/details?id=com.UmitkanProduction.FishingIdle"><img src="./assets/images/fishing.png" width="400" height="200"><div class="text" style="color:#fff;"><center>Idle Fishing Tycoon</center></div></a></li>
-          <li class="clients-item"><a href="https://play.google.com/store/apps/details?id=com.umitkanproduction.kingdomofdecision"><img src="./assets/images/KOC.png" width="400" height="200"><div class="text" style="color:#fff;"><center>Kingdom of Decision</center></div></a></li>
-          <li class="clients-item">
-            <a href="#">
-              <img src="./assets/images/menu.png" width="400" height="200">
-              <div class="text" style="color:#fff;"><center>Super Almalı (Coming Soon)</center></div>
-            </a>
-          </li>
-          <li class="clients-item">
-            <a href="#">
-              <img src="./assets/images/gameplay.png" width="400" height="200">
-              <div class="text" style="color:#fff;"><center>Gameplay Preview</center></div>
-            </a>
-          </li>
-        </ul>
-      </article>
-    </div>
-  </main>
-
-  <!-- JS -->
-  <script src="./assets/js/script.js"></script>
-  <!-- Ionicons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+// Simple language toggle. Default 'en'. Saves choice to localStorage.
+(function(){
+  const defaultLang = 'en';
+  const stored = localStorage.getItem('site-lang') || defaultLang;
+  const setLang = (lang) => {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none';
+    });
+    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    localStorage.setItem('site-lang', lang);
+    // Update html lang attribute
+    document.documentElement.lang = lang;
+  };
+  // init
+  setLang(stored);
+  document.querySelectorAll('.lang-toggle button').forEach(btn => {
+    btn.addEventListener('click', () => setLang(btn.dataset.lang));
+  });
+})();
+</script>
 </body>
 </html>
+
+
+<!--
+FILE: /projects/idle-fishing.html
+Project detail page with language toggle
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Idle Fishing ASMR — Project</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#070707;color:#fff;padding:24px}
+    .wrap{max-width:900px;margin:auto}
+    .hero img{width:100%;border-radius:12px}
+    a{color:#e6b75b}
+    .lang-toggle{display:flex;gap:8px;justify-content:flex-end}
+    .lang-toggle button{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#9e9e9e;padding:6px 10px;bo
