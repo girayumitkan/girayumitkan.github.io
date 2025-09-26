@@ -7,840 +7,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giray - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- favicon -->
   <link rel="shortcut icon" href="./assets/images/icon-dev.svg" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
+    <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
-
       <div class="sidebar-info">
-
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Giray Ümitkan" width="80">
         </figure>
-
         <div class="info-content">
           <h1 class="name" title="Giray Ümitkan">Giray Ümitkan</h1>
-
-          <p class="title">Game developer</p>
+          <p class="title">Game Developer</p>
         </div>
-
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
-
       </div>
 
       <div class="sidebar-info_more">
-
         <div class="separator"></div>
-
         <ul class="contacts-list">
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:girayumitkan@gmail.com" class="contact-link">girayumitkan@gmail.com</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
-              <a href="tel:+905057424873" class="contact-link">+90 (505) 742-4873</a>
+              <a href="tel:+905057624879" class="contact-link">+90 (505) 762-4879</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">September 03, 2001</time>
+              <time datetime="2001-09-03">September 03, 2001</time>
             </div>
-
           </li>
-
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
-              <address>Bursa, TURKEY</address>
+              <address>Bursa, Turkey</address>
             </div>
-
           </li>
-
         </ul>
 
         <div class="separator"></div>
-
         <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/giray-umitkan/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/girayumitkan" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/giray.umitkan" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
+          <li class="social-item"><a href="https://www.linkedin.com/in/giray-umitkan/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li class="social-item"><a href="https://github.com/girayumitkan" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+          <li class="social-item"><a href="https://play.google.com/store/apps/dev?id=5391276629168237411&hl=tr" class="social-link"><ion-icon name="logo-google-playstore"></ion-icon></a></li>
         </ul>
-
       </div>
-
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
+    <!-- MAIN CONTENT -->
     <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- NAVBAR -->
       <nav class="navbar">
-
         <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
         </ul>
-
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
+      <!-- ABOUT -->
+      <article class="about active" data-page="about">
+        <header><h2 class="h2 article-title">About Me</h2></header>
         <section class="about-text">
-          <p>
-           Hello! As someone devoted to exploring the magical and boundless potential of the gaming world, 
-           I am delighted to invite you to embark on the game development adventures I've undertaken.
-           By taking the first step, I welcome you to my portfolio, where creativity and technology converge in a magnificent junction!
-
-          </p>
-
-          <p>
-            My passion is to develop creative games i dream about.
-            Moreover, I
-            develop in simple mobile games for the industry and add monetization to unity games.
-          </p>
+          <p>Hello! I am passionate about exploring the magical and boundless potential of the gaming world. My goal is to create games where creativity and technology converge.</p>
+          <p>I specialize in Unity and C#, developing both innovative personal projects and mobile games for the industry. I also integrate monetization systems into Unity games.</p>
         </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-                <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-              
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Game coding</h4>
-
-                <p class="service-item-text">
-                  stabilized and easy to understand target oriented unity codes.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-              
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Level design</h4>
-
-                <p class="service-item-text">
-                  Level designs that get the innovative player accustomed to the game and keep it in the game.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Database</h4>
-                <p class="service-item-text">
-                  Beginner level at sql.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-              
-         
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-                <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Projects</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="https://www.youtube.com/watch?v=85vgB9uQwCA&ab_channel=Giray">
-                <img src="./assets/images/horrorgame1.png" alt="client logo "width="400" height="200">
-                <div class="text" style="color:#fff;"><center>Horror Game</center></div>
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://www.youtube.com/watch?v=85vgB9uQwCA&ab_channel=Giray">
-                <img src="./assets/images/CraftGame1.png" alt="client logo" width="400" height="200">
-                <div class="text" style="color:#fff;"><center>Survival Fps Game</center></div>
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://play.google.com/store/apps/details?id=com.UmitkanProduction.BilBakalim">
-                <img src="./assets/images/image.png" alt="client logo" width="400" height="200">
-                <div class="text"style="color:#fff;"><center>Quiz Game</center></div>
-              </a>
-            </li>
-            
-            <li class="clients-item">
-              <a href="https://play.google.com/store/apps/details?id=com.umitkanproduction.kingdomofdecision">
-                <img src="./assets/images/KOC.png" alt="client logo" width="400" height="200">
-                <div class="text"style="color:#fff;"><center>Kingdom Of Choices</center></div>
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
       </article>
-      <!--
-        - #RESUME
-      -->
-                
 
+      <!-- RESUME -->
       <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+        <header><h2 class="h2 article-title">Resume</h2></header>
 
         <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
+          <div class="title-wrapper"><div class="icon-box"><ion-icon name="book-outline"></ion-icon></div><h3 class="h3">Education</h3></div>
           <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Pamukkale University , Computer Science</h4>
-
-              <span>2019 — 2023</span>
-
-
-            </li>
-
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">Pamukkale University, Computer Engineering</h4><span>2019 — 2023</span></li>
           </ol>
-
         </section>
 
         <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
+          <div class="title-wrapper"><div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div><h3 class="h3">Experience</h3></div>
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Funika Games</h4>
-
-              <span>JAN 2022 - MARCH 2022</span>
-
-              <p class="timeline-text">
-               I developed myself with the sample projects they provided by supporting the production of
-               hyper casual games for mobile devices, and I took notes on the sector by observing the meetings
-              </p>
-
+              <h4 class="h4 timeline-item-title">AI Developer / Machine Learning Engineer – Outlier</h4>
+              <span>Dec 2024 – Present (Remote)</span>
+              <p class="timeline-text">Designed ML models, fine-tuned LLMs, and developed AI evaluation tools using Python and PyTorch.</p>
             </li>
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Prestij Software</h4>
-
-              <span>July 2022 - SEP 2022</span>
-
-              <p class="timeline-text">
-                As data scientists, it was a more sql-based internship where we made additions and queries
-                to the database of Bursa State Hospital.
-              </p>
-
+              <h4 class="h4 timeline-item-title">Unity Tutor – Kodland</h4>
+              <span>Sep 2024 – Jun 2025 (Remote)</span>
+              <p class="timeline-text">Taught Unity and C# to students, guiding them to develop complete projects and improve coding skills.</p>
             </li>
-
-
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intern – Prestij Software</h4>
+              <span>Jul 2022 – Sep 2022</span>
+              <p class="timeline-text">Worked on SQL queries for Bursa State Hospital database, focusing on data accuracy and reporting.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intern – Funika Games</h4>
+              <span>Jan 2022 – Mar 2022</span>
+              <p class="timeline-text">Contributed to hyper-casual mobile games and learned industry workflows.</p>
+            </li>
           </ol>
-
         </section>
 
         <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
+          <h3 class="h3 skills-title">Skills</h3>
           <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Game develop</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Level Design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Mobile app develop</h5>
-                <data value="90">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Unity / C#</h5><data value="90">90%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:90%;"></div></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Python / AI</h5><data value="70">70%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:70%;"></div></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">SQL / Databases</h5><data value="60">60%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:60%;"></div></div></li>
+            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Game Design</h5><data value="80">80%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:80%;"></div></div></li>
           </ul>
-
         </section>
 
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
+        <section>
+          <h3 class="h3">🌍 Türkçe Çeviri</h3>
+          <p>Bilgisayar Mühendisliği mezunu, oyun geliştirme ve yapay zekâya ilgi duyan, Unity ve C# üzerinde deneyimli. SQL ve Python bilgisine sahip, problem çözme ve yaratıcılıkla öne çıkan bir geliştirici.</p>
         </section>
-
       </article>
 
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Deneme</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Deneme</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 4, 2023</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Deneme</h3>
-
-                  <p class="blog-text">
-                    
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
+      <!-- PROJECTS -->
+      <article class="clients" data-page="projects">
+        <header><h2 class="h2 article-title">Projects</h2></header>
+        <section>
+          <a href="https://play.google.com/store/apps/dev?id=5391276629168237411&hl=tr" target="_blank" class="btn" style="background:#2196f3;color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;">Google Play Developer Page</a>
         </section>
-
+        <ul class="clients-list has-scrollbar">
+          <li class="clients-item"><a href="https://play.google.com/store/apps/details?id=com.UmitkanProduction.BilBakalim"><img src="./assets/images/image.png" width="400" height="200"><div class="text" style="color:#fff;"><center>Bil Bakalım</center></div></a></li>
+          <li class="clients-item"><a href="https://play.google.com/store/apps/details?id=com.UmitkanProduction.FishingIdle"><img src="./assets/images/fishing.png" width="400" height="200"><div class="text" style="color:#fff;"><center>Idle Fishing Tycoon</center></div></a></li>
+          <li class="clients-item"><a href="https://play.google.com/store/apps/details?id=com.umitkanproduction.kingdomofdecision"><img src="./assets/images/KOC.png" width="400" height="200"><div class="text" style="color:#fff;"><center>Kingdom of Decision</center></div></a></li>
+          <li class="clients-item">
+            <a href="#">
+              <img src="./assets/images/menu.png" width="400" height="200">
+              <div class="text" style="color:#fff;"><center>Super Almalı (Coming Soon)</center></div>
+            </a>
+          </li>
+          <li class="clients-item">
+            <a href="#">
+              <img src="./assets/images/gameplay.png" width="400" height="200">
+              <div class="text" style="color:#fff;"><center>Gameplay Preview</center></div>
+            </a>
+          </li>
+        </ul>
       </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      
-
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
+  <!-- JS -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
+  <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
