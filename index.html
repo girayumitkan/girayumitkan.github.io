@@ -1,18 +1,12 @@
-<!--
-FILE: index.html
-Description: Updated single-file index with language toggle (English default, Turkish option).
-Place assets in /assets/ and project pages in /projects/.
--->
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Giray Ümitkan — Portfolio</title>
-  <meta name="description" content="Giray Ümitkan — Game Developer. Featured projects and short intro." />
-  <link rel="icon" href="assets/favicon.png" />
-  <style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Giray Ümitkan — Portfolio</title>
+<meta name="description" content="Giray Ümitkan — Game Developer. Featured projects and short intro." />
+<link rel="icon" href="assets/favicon.png" />
+<style>
 :root{ --bg:#0b0b0b; --panel:#111; --muted:#9e9e9e; --accent:#e6b75b; --white:#fff; --ff: 'Poppins', sans-serif; }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%} body{font-family:var(--ff);background:var(--bg);color:var(--white);-webkit-font-smoothing:antialiased}
@@ -43,111 +37,35 @@ a{color:inherit;text-decoration:none}
 </style>
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <div class="lang-toggle" style="margin-bottom:12px">
-        <button id="lang-en" data-lang="en" class="active">EN</button>
-        <button id="lang-tr" data-lang="tr">TR</button>
-      </div>
+<div class="container">
+<aside class="sidebar">
+<div class="lang-toggle" style="margin-bottom:12px">
+<button id="lang-en" data-lang="en" class="active">EN</button>
+<button id="lang-tr" data-lang="tr">TR</button>
+</div>
 
-      <img class="avatar" src="assets/avatar.jpg" alt="Giray Ümitkan" />
-      <div class="name" data-lang="en">Giray Ümitkan</div>
-      <div class="name" data-lang="tr" style="display:none">Giray Ümitkan</div>
-      <div class="title" data-lang="en">Game Developer</div>
-      <div class="title" data-lang="tr" style="display:none">Oyun Geliştirici</div>
 
-      <div class="contact-list">
-        <div class="contact-item">📧 <span data-lang="en">girayumitkan@gmail.com</span><span data-lang="tr" style="display:none">girayumitkan@gmail.com</span></div>
-        <div class="contact-item">📍 <span data-lang="en">Bursa, Turkey</span><span data-lang="tr" style="display:none">Bursa, Türkiye</span></div>
-        <div class="contact-item">📞 <span data-lang="en">+90 (505) 762-4879</span><span data-lang="tr" style="display:none">+90 (505) 762-4879</span></div>
-      </div>
-    </aside>
+<img class="avatar" src="assets/avatar.jpg" alt="Giray Ümitkan" />
+<div class="name" data-lang="en">Giray Ümitkan</div>
+<div class="name" data-lang="tr" style="display:none">Giray Ümitkan</div>
+<div class="title" data-lang="en">Game Developer</div>
+<div class="title" data-lang="tr" style="display:none">Oyun Geliştirici</div>
 
-    <main class="main">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
-        <section class="hero" style="flex:1">
-          <h1 data-lang="en">Hi — I'm Giray</h1>
-          <h1 data-lang="tr" style="display:none">Merhaba — Ben Giray</h1>
-          <p data-lang="en">Short intro: I build games with Unity &amp; C#. I focus on mobile games, idle mechanics, monetization, and polished UX. Click project images to open external links in a new tab; use "Details" to open an in-site project page.</p>
-          <p data-lang="tr" style="display:none">Kısa tanıtım: Unity ve C# ile oyunlar geliştiriyorum. Mobil oyunlar, idle mekanikleri, monetizasyon ve UX üzerine çalışıyorum. Proje resmine tıklayınca dış link yeni sekmede açılır; "Detay" ile sayfa içi proje tanıtımı açılır.</p>
-          <div class="actions">
-            <a class="btn" href="#projects" data-lang="en">Projects</a>
-            <a class="btn" href="#projects" data-lang="tr" style="display:none">Projeler</a>
-            <a class="btn" href="assets/resume.pdf" style="background:#ccc;color:#111">CV</a>
-          </div>
-        </section>
-      </div>
 
-      <section id="projects" style="margin-top:8px">
-        <h2 data-lang="en">Projects</h2>
-        <h2 data-lang="tr" style="display:none">Projeler</h2>
+<div class="contact-list">
+<div class="contact-item">📧 <span data-lang="en">girayumitkan@gmail.com</span><span data-lang="tr" style="display:none">girayumitkan@gmail.com</span></div>
+<div class="contact-item">📍 <span data-lang="en">Bursa, Turkey</span><span data-lang="tr" style="display:none">Bursa, Türkiye</span></div>
+<div class="contact-item">📞 <span data-lang="en">+90 (505) 762-4879</span><span data-lang="tr" style="display:none">+90 (505) 762-4879</span></div>
+</div>
+</aside>
 
-        <div class="projects-grid">
-          <article class="project-card">
-            <img src="assets/projects/project1.jpg" alt="Idle Fishing ASMR" />
-            <div class="project-title" data-lang="en">Idle Fishing ASMR</div>
-            <div class="project-title" data-lang="tr" style="display:none">Idle Fishing ASMR</div>
-            <div class="project-links">
-              <a href="https://play.google.com/store/apps/details?id=com.example.idlefishing" target="_blank" rel="noopener">Open (store)</a>
-              <a href="projects/idle-fishing.html" target="_blank">Details</a>
-            </div>
-          </article>
 
-          <article class="project-card">
-            <img src="assets/projects/project2.jpg" alt="Spin Wheel System" />
-            <div class="project-title" data-lang="en">Spin Wheel System</div>
-            <div class="project-title" data-lang="tr" style="display:none">Spin Wheel System</div>
-            <div class="project-links">
-              <a href="https://example.com/spinwheel" target="_blank" rel="noopener">Open (demo)</a>
-              <a href="projects/spin-wheel.html" target="_blank">Details</a>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-<script>
-// Simple language toggle. Default 'en'. Saves choice to localStorage.
-(function(){
-  const defaultLang = 'en';
-  const stored = localStorage.getItem('site-lang') || defaultLang;
-  const setLang = (lang) => {
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none';
-    });
-    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
-    localStorage.setItem('site-lang', lang);
-    // Update html lang attribute
-    document.documentElement.lang = lang;
-  };
-  // init
-  setLang(stored);
-  document.querySelectorAll('.lang-toggle button').forEach(btn => {
-    btn.addEventListener('click', () => setLang(btn.dataset.lang));
-  });
-})();
-</script>
-</body>
+<main class="main">
+<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+<section class="hero" style="flex:1">
+<h1 data-lang="en">Hi — I'm Giray</h1>
+<h1 data-lang="tr" style="display:none">Merhaba — Ben Giray</h1>
+<p data-lang="en">Short intro: I build games with Unity &amp; C#. I focus on mobile games, idle mechanics, monetization, and polished UX. Click project images to open external links in a new tab; use "Details" to open an in-site project page.</p>
+<p data-lang="tr" style="display:none">Kısa tanıtım: Unity ve C# ile oyunlar geliştiriyorum. Mobil oyunlar, idle mekanikleri, monetizasyon ve UX üzerine çalışıyorum. Proje resmine tıklayınca dış link yeni sekmede açılır; "Detay" ile sayfa içi proje tanıtımı açılır.</p>
+<div class="actions">
 </html>
-
-
-<!--
-FILE: /projects/idle-fishing.html
-Project detail page with language toggle
--->
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Idle Fishing ASMR — Project</title>
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;background:#070707;color:#fff;padding:24px}
-    .wrap{max-width:900px;margin:auto}
-    .hero img{width:100%;border-radius:12px}
-    a{color:#e6b75b}
-    .lang-toggle{display:flex;gap:8px;justify-content:flex-end}
-    .lang-toggle button{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#9e9e9e;padding:6px 10px;bo
